@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+C:\Users\Bere\Documents\LinkedIn Learning\DuckJavaCourse\madecraft-oop\2. Inside Classes\examples\.metadata\.plugins\org.eclipse.jdt.core
