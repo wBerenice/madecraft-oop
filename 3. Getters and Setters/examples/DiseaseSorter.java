@@ -1,5 +1,6 @@
 package examples;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,22 +18,23 @@ public class DiseaseSorter {
 		diseases.add(malaria);
 		diseases.add(cancer);
 
+		System.out.println("Curable diseases");
+		cancer.setCurable(true);//setter method
+
+		for (Disease disease:diseases) {
+			//print out diseases that are CURABLE
+			if (disease.isCurable()) {
+				System.out.println(disease.getName());
+			}//if
+		}//FOR
 		/*
-		 * Options for setting the value of "curable": 
-		 * 	1. change the value in the constructor - you can only call a constructor once  
-		 * 	2. access the member variable directly - breaks encapsulation 
+		 * Options for setting the value of "curable":
+		 * 	1. change the value in the constructor - you can only call a constructor once
+		 * 	2. access the member variable directly - breaks encapsulation
 		 * 	3. create a setter
 		 */
 
-		cancer.setCurable(true);
 
-		System.out.println("Curable diseases: ");
-		for (Disease disease : diseases) {
-			if (disease.isCurable()) {
-				System.out.println(disease.getName());
-			}
-		}
+	}//main
 
-	}
-
-}
+}//class DiseaseSorter

@@ -10,7 +10,7 @@ import org.junit.Test;
  * <code>
  * 			private String name; 
  * 			private int eyes; 
- * 			private String color; 
+ * 			private String color;
  * 			private String master;
  * </code>
  * 
@@ -23,26 +23,26 @@ public class MinionTest {
 //	@Test
 //	public void testConstructor() {
 //		Minion stuart = new Minion("Stuart", 1, "yellow", "");
-//		assertEquals("Stuart", stuart.getName());
-//		assertEquals(1, stuart.getEyes());
-//		assertEquals("yellow", stuart.getColor());
+//		assertEquals("Stuart", stuart.getMinionName());
+//		assertEquals(1, stuart.getMinionEyes());
+//		assertEquals("yellow", stuart.getMinionColor());
 //
 //		Minion dave = new Minion("Dave", 2, "yellow", "");
-//		assertEquals("Dave", dave.getName());
-//		assertEquals(2, dave.getEyes());
-//		assertEquals("yellow", dave.getColor());
+//		assertEquals("Dave", dave.getMinionName());
+//		assertEquals(2, dave.getMinionEyes());
+//		assertEquals("yellow", dave.getMinionColor());
 //	}
-//
-//	@Test
-//	public void testSetters() {
-//		Minion stuart = new Minion("Stuart", 1, "yellow", "");
-//
-//		stuart.setMaster("T. Rex");
-//		assertEquals("T. Rex", stuart.getMaster());
-//
-//		stuart.setMaster("Napoleon");
-//		assertEquals("Napoleon", stuart.getMaster());
-//	}
+
+	@Test
+	public void testSetters() {
+		Minion stuart = new Minion("Stuart", 1, "yellow", "");
+
+		stuart.setMaster("T. Rex");
+		assertEquals("T. Rex", stuart.getMinionMaster());
+
+		stuart.setMaster("Napoleon");
+		assertEquals("Napoleon", stuart.getMinionMaster());
+	}
 
 }
 

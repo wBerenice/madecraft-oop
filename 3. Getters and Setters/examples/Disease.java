@@ -2,32 +2,26 @@ package examples;
 
 public class Disease {
 
-	private String name;
+	private String name;//name of Disease
 	private boolean curable;
-	
-	Disease(String title, boolean isCurable) {
-		this.curable = isCurable;
+
+	Disease(String title, boolean isCurable){
 		this.name = title;
+		this.curable = isCurable;
+	}//constructor
+
+	boolean isCurable(){
+		return this.curable;
+	}//getter isCurable
+
+	String getName(){
+		return this.name;
+	}//getter getName
+
+	public void setCurable(boolean valueCurable){
+		this.curable = valueCurable;
 	}
 
-	/* SETTERS */
 
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public void setCurable(boolean curable) {
-		this.curable = curable;
-	}
 	
-	/* GETTERS */
-	
-	public boolean isCurable() {
-		return curable;
-	}
-	
-	public String getName() {
-		return name;
-	}
-	
-}
+}//class Disease
