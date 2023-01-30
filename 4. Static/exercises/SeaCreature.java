@@ -18,15 +18,15 @@ public class SeaCreature {
 
 	SeaCreature(String name) {
 		this.name = name;
-	}
+	}//constructor
 
 	public String getName() {
 		return "My name is " + name;
-	}
+	}//getter getName();
 
 	public void eat() {
 		System.out.println(name + " is eating krabby patties");
-	}
+	}//method eat();
 
 	public void laugh() {
 		try {
@@ -39,6 +39,6 @@ public class SeaCreature {
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-	}
+	}//laugh method
 
 }

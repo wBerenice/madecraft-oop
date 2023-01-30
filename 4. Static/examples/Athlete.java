@@ -13,7 +13,7 @@ public class Athlete {
 		this.speed = speed;
 		runnersInRace++;
 		this.bibNumber = runnersInRace;
-	}
+	}//constructor
 
 	public void setMarathonLocation(String marathonLocation) {
 		this.marathonLocation = marathonLocation;

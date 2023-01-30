@@ -7,7 +7,7 @@ public class Minion {
     private String color;
     private String master;
 
-    public Minion(String minionName, int numberEyes, String mainColor, String myMaster){
+    Minion(String minionName, int numberEyes, String mainColor, String myMaster){
         this.name = minionName;
         this.eyes = numberEyes;
         this.color = mainColor;

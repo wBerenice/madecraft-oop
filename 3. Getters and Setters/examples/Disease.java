@@ -20,7 +20,7 @@ public class Disease {
 
 	public void setCurable(boolean valueCurable){
 		this.curable = valueCurable;
-	}
+	}//setter setCurable
 
 
 	
